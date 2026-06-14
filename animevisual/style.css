@@ -1,0 +1,82 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background: #121212;
+    color: white;
+    min-height: 100vh;
+}
+
+header {
+    text-align: center;
+    padding: 30px;
+    background: #1f1f1f;
+}
+
+header h1 {
+    color: #ff4d4d;
+    margin-bottom: 10px;
+}
+
+.search-container {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+.search-container input {
+    width: 300px;
+    padding: 12px;
+    border-radius: 8px;
+    border: none;
+    outline: none;
+}
+
+.anime-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+.card {
+    background: #1e1e1e;
+    border-radius: 12px;
+    overflow: hidden;
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card img {
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+}
+
+.card-content {
+    padding: 15px;
+}
+
+.card-content h2 {
+    margin-bottom: 10px;
+    color: #ff4d4d;
+}
+
+.card-content p {
+    color: #ddd;
+    line-height: 1.5;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #1f1f1f;
+    margin-top: 30px;
+}
